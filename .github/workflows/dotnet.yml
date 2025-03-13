@@ -10,6 +10,7 @@ jobs:
         dotnet pack \
         -c Release \
         -o dist \
+        -p:PackageID=VerismoHR.${{github.event.repository.name}} \
         -p:PackageVersion=1.0.${{github.run_number}} \
         -p:RepositoryUrl=${{github.repositoryUrl}}
     - run: |
