@@ -12,7 +12,7 @@ jobs:
         -o dist \
         -p:PackageID=VerismoHR.${{github.event.repository.name}} \
         -p:PackageVersion=1.0.${{github.run_number}} \
-        -p:RepositoryUrl=${{github.repositoryUrl}}
+        -p:RepositoryUrl=${{github.server_url}}/${{github.repository}}
     - run: |
         dotnet nuget push \
         dist/**/*.nupkg \
