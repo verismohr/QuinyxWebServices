@@ -3,6 +3,7 @@
     <AssemblyName>QuinyxWebServices</AssemblyName>
     <LangVersion>10</LangVersion>
     <TargetFrameworks>net48;netstandard2.0</TargetFrameworks>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.25" PrivateAssets="All" />
