@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlGetRestaurant", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlGetRestaurant",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlGetRestaurantRequest
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public string apiKey;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public string apiKey;
 
-	public wsdlGetRestaurantRequest()
-	{
-	}
+    public wsdlGetRestaurantRequest() { }
 
-	public wsdlGetRestaurantRequest(string apiKey)
-	{
-		this.apiKey = apiKey;
-	}
+    public wsdlGetRestaurantRequest(string apiKey)
+    {
+        this.apiKey = apiKey;
+    }
 }

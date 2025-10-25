@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class AgreementTemplatesV2Response
 {
-	private AgreementTemplateV2[] agreementTemplatesField;
+    private AgreementTemplateV2[] agreementTemplatesField;
 
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	public AgreementTemplateV2[] agreementTemplates
-	{
-		get
-		{
-			return agreementTemplatesField;
-		}
-		set
-		{
-			agreementTemplatesField = value;
-		}
-	}
+    public AgreementTemplateV2[] agreementTemplates
+    {
+        get { return agreementTemplatesField; }
+        set { agreementTemplatesField = value; }
+    }
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 }

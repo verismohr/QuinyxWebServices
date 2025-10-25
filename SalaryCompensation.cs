@@ -7,331 +7,193 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class SalaryCompensation
 {
-	private int idField;
+    private int idField;
 
-	private bool idFieldSpecified;
+    private bool idFieldSpecified;
 
-	private string nameField;
+    private string nameField;
 
-	private int reddayIdField;
+    private int reddayIdField;
 
-	private string salaryCodesField;
+    private string salaryCodesField;
 
-	private string eligibilityRuleIdsField;
+    private string eligibilityRuleIdsField;
 
-	private int salaryCodeNameField;
+    private int salaryCodeNameField;
 
-	private bool salaryCodeNameFieldSpecified;
+    private bool salaryCodeNameFieldSpecified;
 
-	private int periodTypeField;
+    private int periodTypeField;
 
-	private int periodLengthField;
+    private int periodLengthField;
 
-	private string allowedAbsencesField;
+    private string allowedAbsencesField;
 
-	private int fixedNrOfWorkedDaysField;
+    private int fixedNrOfWorkedDaysField;
 
-	private bool fixedNrOfWorkedDaysFieldSpecified;
+    private bool fixedNrOfWorkedDaysFieldSpecified;
 
-	private int calculationTypeField;
+    private int calculationTypeField;
 
-	private int periodCalculationTypeField;
+    private int periodCalculationTypeField;
 
-	private bool includeAllAbsencesCountedAsWorkedHoursField;
+    private bool includeAllAbsencesCountedAsWorkedHoursField;
 
-	private bool includeAllAbsencesCountedAsWorkedHoursFieldSpecified;
+    private bool includeAllAbsencesCountedAsWorkedHoursFieldSpecified;
 
-	private bool countVirtualShiftAsWorkingDayField;
+    private bool countVirtualShiftAsWorkingDayField;
 
-	private bool deductWorkingHoursFromCompensationField;
+    private bool deductWorkingHoursFromCompensationField;
 
-	private bool deductWorkingHoursFromCompensationFieldSpecified;
+    private bool deductWorkingHoursFromCompensationFieldSpecified;
 
-	private decimal percentageOfSummedSalariesField;
+    private decimal percentageOfSummedSalariesField;
 
-	private bool percentageOfSummedSalariesFieldSpecified;
+    private bool percentageOfSummedSalariesFieldSpecified;
 
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	public int id
-	{
-		get
-		{
-			return idField;
-		}
-		set
-		{
-			idField = value;
-		}
-	}
+    public int id
+    {
+        get { return idField; }
+        set { idField = value; }
+    }
 
-	[SoapIgnore]
-	public bool idSpecified
-	{
-		get
-		{
-			return idFieldSpecified;
-		}
-		set
-		{
-			idFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool idSpecified
+    {
+        get { return idFieldSpecified; }
+        set { idFieldSpecified = value; }
+    }
 
-	public string name
-	{
-		get
-		{
-			return nameField;
-		}
-		set
-		{
-			nameField = value;
-		}
-	}
+    public string name
+    {
+        get { return nameField; }
+        set { nameField = value; }
+    }
 
-	public int reddayId
-	{
-		get
-		{
-			return reddayIdField;
-		}
-		set
-		{
-			reddayIdField = value;
-		}
-	}
+    public int reddayId
+    {
+        get { return reddayIdField; }
+        set { reddayIdField = value; }
+    }
 
-	public string salaryCodes
-	{
-		get
-		{
-			return salaryCodesField;
-		}
-		set
-		{
-			salaryCodesField = value;
-		}
-	}
+    public string salaryCodes
+    {
+        get { return salaryCodesField; }
+        set { salaryCodesField = value; }
+    }
 
-	public string eligibilityRuleIds
-	{
-		get
-		{
-			return eligibilityRuleIdsField;
-		}
-		set
-		{
-			eligibilityRuleIdsField = value;
-		}
-	}
+    public string eligibilityRuleIds
+    {
+        get { return eligibilityRuleIdsField; }
+        set { eligibilityRuleIdsField = value; }
+    }
 
-	public int salaryCodeName
-	{
-		get
-		{
-			return salaryCodeNameField;
-		}
-		set
-		{
-			salaryCodeNameField = value;
-		}
-	}
+    public int salaryCodeName
+    {
+        get { return salaryCodeNameField; }
+        set { salaryCodeNameField = value; }
+    }
 
-	[SoapIgnore]
-	public bool salaryCodeNameSpecified
-	{
-		get
-		{
-			return salaryCodeNameFieldSpecified;
-		}
-		set
-		{
-			salaryCodeNameFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool salaryCodeNameSpecified
+    {
+        get { return salaryCodeNameFieldSpecified; }
+        set { salaryCodeNameFieldSpecified = value; }
+    }
 
-	public int periodType
-	{
-		get
-		{
-			return periodTypeField;
-		}
-		set
-		{
-			periodTypeField = value;
-		}
-	}
+    public int periodType
+    {
+        get { return periodTypeField; }
+        set { periodTypeField = value; }
+    }
 
-	public int periodLength
-	{
-		get
-		{
-			return periodLengthField;
-		}
-		set
-		{
-			periodLengthField = value;
-		}
-	}
+    public int periodLength
+    {
+        get { return periodLengthField; }
+        set { periodLengthField = value; }
+    }
 
-	public string allowedAbsences
-	{
-		get
-		{
-			return allowedAbsencesField;
-		}
-		set
-		{
-			allowedAbsencesField = value;
-		}
-	}
+    public string allowedAbsences
+    {
+        get { return allowedAbsencesField; }
+        set { allowedAbsencesField = value; }
+    }
 
-	public int fixedNrOfWorkedDays
-	{
-		get
-		{
-			return fixedNrOfWorkedDaysField;
-		}
-		set
-		{
-			fixedNrOfWorkedDaysField = value;
-		}
-	}
+    public int fixedNrOfWorkedDays
+    {
+        get { return fixedNrOfWorkedDaysField; }
+        set { fixedNrOfWorkedDaysField = value; }
+    }
 
-	[SoapIgnore]
-	public bool fixedNrOfWorkedDaysSpecified
-	{
-		get
-		{
-			return fixedNrOfWorkedDaysFieldSpecified;
-		}
-		set
-		{
-			fixedNrOfWorkedDaysFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool fixedNrOfWorkedDaysSpecified
+    {
+        get { return fixedNrOfWorkedDaysFieldSpecified; }
+        set { fixedNrOfWorkedDaysFieldSpecified = value; }
+    }
 
-	public int calculationType
-	{
-		get
-		{
-			return calculationTypeField;
-		}
-		set
-		{
-			calculationTypeField = value;
-		}
-	}
+    public int calculationType
+    {
+        get { return calculationTypeField; }
+        set { calculationTypeField = value; }
+    }
 
-	public int periodCalculationType
-	{
-		get
-		{
-			return periodCalculationTypeField;
-		}
-		set
-		{
-			periodCalculationTypeField = value;
-		}
-	}
+    public int periodCalculationType
+    {
+        get { return periodCalculationTypeField; }
+        set { periodCalculationTypeField = value; }
+    }
 
-	public bool includeAllAbsencesCountedAsWorkedHours
-	{
-		get
-		{
-			return includeAllAbsencesCountedAsWorkedHoursField;
-		}
-		set
-		{
-			includeAllAbsencesCountedAsWorkedHoursField = value;
-		}
-	}
+    public bool includeAllAbsencesCountedAsWorkedHours
+    {
+        get { return includeAllAbsencesCountedAsWorkedHoursField; }
+        set { includeAllAbsencesCountedAsWorkedHoursField = value; }
+    }
 
-	[SoapIgnore]
-	public bool includeAllAbsencesCountedAsWorkedHoursSpecified
-	{
-		get
-		{
-			return includeAllAbsencesCountedAsWorkedHoursFieldSpecified;
-		}
-		set
-		{
-			includeAllAbsencesCountedAsWorkedHoursFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool includeAllAbsencesCountedAsWorkedHoursSpecified
+    {
+        get { return includeAllAbsencesCountedAsWorkedHoursFieldSpecified; }
+        set { includeAllAbsencesCountedAsWorkedHoursFieldSpecified = value; }
+    }
 
-	public bool countVirtualShiftAsWorkingDay
-	{
-		get
-		{
-			return countVirtualShiftAsWorkingDayField;
-		}
-		set
-		{
-			countVirtualShiftAsWorkingDayField = value;
-		}
-	}
+    public bool countVirtualShiftAsWorkingDay
+    {
+        get { return countVirtualShiftAsWorkingDayField; }
+        set { countVirtualShiftAsWorkingDayField = value; }
+    }
 
-	public bool deductWorkingHoursFromCompensation
-	{
-		get
-		{
-			return deductWorkingHoursFromCompensationField;
-		}
-		set
-		{
-			deductWorkingHoursFromCompensationField = value;
-		}
-	}
+    public bool deductWorkingHoursFromCompensation
+    {
+        get { return deductWorkingHoursFromCompensationField; }
+        set { deductWorkingHoursFromCompensationField = value; }
+    }
 
-	[SoapIgnore]
-	public bool deductWorkingHoursFromCompensationSpecified
-	{
-		get
-		{
-			return deductWorkingHoursFromCompensationFieldSpecified;
-		}
-		set
-		{
-			deductWorkingHoursFromCompensationFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool deductWorkingHoursFromCompensationSpecified
+    {
+        get { return deductWorkingHoursFromCompensationFieldSpecified; }
+        set { deductWorkingHoursFromCompensationFieldSpecified = value; }
+    }
 
-	public decimal percentageOfSummedSalaries
-	{
-		get
-		{
-			return percentageOfSummedSalariesField;
-		}
-		set
-		{
-			percentageOfSummedSalariesField = value;
-		}
-	}
+    public decimal percentageOfSummedSalaries
+    {
+        get { return percentageOfSummedSalariesField; }
+        set { percentageOfSummedSalariesField = value; }
+    }
 
-	[SoapIgnore]
-	public bool percentageOfSummedSalariesSpecified
-	{
-		get
-		{
-			return percentageOfSummedSalariesFieldSpecified;
-		}
-		set
-		{
-			percentageOfSummedSalariesFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool percentageOfSummedSalariesSpecified
+    {
+        get { return percentageOfSummedSalariesFieldSpecified; }
+        set { percentageOfSummedSalariesFieldSpecified = value; }
+    }
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 }

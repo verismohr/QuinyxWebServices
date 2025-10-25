@@ -7,45 +7,27 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class TransferStatus
 {
-	private string extTransferIdField;
+    private string extTransferIdField;
 
-	private string statusField;
+    private string statusField;
 
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	public string extTransferId
-	{
-		get
-		{
-			return extTransferIdField;
-		}
-		set
-		{
-			extTransferIdField = value;
-		}
-	}
+    public string extTransferId
+    {
+        get { return extTransferIdField; }
+        set { extTransferIdField = value; }
+    }
 
-	public string status
-	{
-		get
-		{
-			return statusField;
-		}
-		set
-		{
-			statusField = value;
-		}
-	}
+    public string status
+    {
+        get { return statusField; }
+        set { statusField = value; }
+    }
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 }

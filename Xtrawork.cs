@@ -7,61 +7,37 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class Xtrawork
 {
-	private DateTime fromDateField;
+    private DateTime fromDateField;
 
-	private string fromTimeField;
+    private string fromTimeField;
 
-	private DateTime toDateField;
+    private DateTime toDateField;
 
-	private string toTimeField;
+    private string toTimeField;
 
-	[SoapElement(DataType = "date")]
-	public DateTime fromDate
-	{
-		get
-		{
-			return fromDateField;
-		}
-		set
-		{
-			fromDateField = value;
-		}
-	}
+    [SoapElement(DataType = "date")]
+    public DateTime fromDate
+    {
+        get { return fromDateField; }
+        set { fromDateField = value; }
+    }
 
-	public string fromTime
-	{
-		get
-		{
-			return fromTimeField;
-		}
-		set
-		{
-			fromTimeField = value;
-		}
-	}
+    public string fromTime
+    {
+        get { return fromTimeField; }
+        set { fromTimeField = value; }
+    }
 
-	[SoapElement(DataType = "date")]
-	public DateTime toDate
-	{
-		get
-		{
-			return toDateField;
-		}
-		set
-		{
-			toDateField = value;
-		}
-	}
+    [SoapElement(DataType = "date")]
+    public DateTime toDate
+    {
+        get { return toDateField; }
+        set { toDateField = value; }
+    }
 
-	public string toTime
-	{
-		get
-		{
-			return toTimeField;
-		}
-		set
-		{
-			toTimeField = value;
-		}
-	}
+    public string toTime
+    {
+        get { return toTimeField; }
+        set { toTimeField = value; }
+    }
 }

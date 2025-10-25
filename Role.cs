@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class Role
 {
-	private int idField;
+    private int idField;
 
-	private string nameField;
+    private string nameField;
 
-	public int id
-	{
-		get
-		{
-			return idField;
-		}
-		set
-		{
-			idField = value;
-		}
-	}
+    public int id
+    {
+        get { return idField; }
+        set { idField = value; }
+    }
 
-	public string name
-	{
-		get
-		{
-			return nameField;
-		}
-		set
-		{
-			nameField = value;
-		}
-	}
+    public string name
+    {
+        get { return nameField; }
+        set { nameField = value; }
+    }
 }

@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class GetEmployeeSkillsResponse
 {
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	private employeeSkill[] employeesSkillsField;
+    private employeeSkill[] employeesSkillsField;
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 
-	public employeeSkill[] employeesSkills
-	{
-		get
-		{
-			return employeesSkillsField;
-		}
-		set
-		{
-			employeesSkillsField = value;
-		}
-	}
+    public employeeSkill[] employeesSkills
+    {
+        get { return employeesSkillsField; }
+        set { employeesSkillsField = value; }
+    }
 }

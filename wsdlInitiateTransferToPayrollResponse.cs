@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlInitiateTransferToPayrollResponse", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlInitiateTransferToPayrollResponse",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlInitiateTransferToPayrollResponse
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public TransferStatus @return;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public TransferStatus @return;
 
-	public wsdlInitiateTransferToPayrollResponse()
-	{
-	}
+    public wsdlInitiateTransferToPayrollResponse() { }
 
-	public wsdlInitiateTransferToPayrollResponse(TransferStatus @return)
-	{
-		this.@return = @return;
-	}
+    public wsdlInitiateTransferToPayrollResponse(TransferStatus @return)
+    {
+        this.@return = @return;
+    }
 }

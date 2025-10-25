@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class InfoByDate
 {
-	private string dateField;
+    private string dateField;
 
-	private EmployeeBadgeNo employeeBadgeNoField;
+    private EmployeeBadgeNo employeeBadgeNoField;
 
-	public string date
-	{
-		get
-		{
-			return dateField;
-		}
-		set
-		{
-			dateField = value;
-		}
-	}
+    public string date
+    {
+        get { return dateField; }
+        set { dateField = value; }
+    }
 
-	public EmployeeBadgeNo EmployeeBadgeNo
-	{
-		get
-		{
-			return employeeBadgeNoField;
-		}
-		set
-		{
-			employeeBadgeNoField = value;
-		}
-	}
+    public EmployeeBadgeNo EmployeeBadgeNo
+    {
+        get { return employeeBadgeNoField; }
+        set { employeeBadgeNoField = value; }
+    }
 }

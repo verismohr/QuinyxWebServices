@@ -7,73 +7,43 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class ProcessLeavesRecord
 {
-	private int leaveIdField;
+    private int leaveIdField;
 
-	private int leaveActionField;
+    private int leaveActionField;
 
-	private int shiftActionField;
+    private int shiftActionField;
 
-	private string managerCommentsField;
+    private string managerCommentsField;
 
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	public int leaveId
-	{
-		get
-		{
-			return leaveIdField;
-		}
-		set
-		{
-			leaveIdField = value;
-		}
-	}
+    public int leaveId
+    {
+        get { return leaveIdField; }
+        set { leaveIdField = value; }
+    }
 
-	public int leaveAction
-	{
-		get
-		{
-			return leaveActionField;
-		}
-		set
-		{
-			leaveActionField = value;
-		}
-	}
+    public int leaveAction
+    {
+        get { return leaveActionField; }
+        set { leaveActionField = value; }
+    }
 
-	public int shiftAction
-	{
-		get
-		{
-			return shiftActionField;
-		}
-		set
-		{
-			shiftActionField = value;
-		}
-	}
+    public int shiftAction
+    {
+        get { return shiftActionField; }
+        set { shiftActionField = value; }
+    }
 
-	public string managerComments
-	{
-		get
-		{
-			return managerCommentsField;
-		}
-		set
-		{
-			managerCommentsField = value;
-		}
-	}
+    public string managerComments
+    {
+        get { return managerCommentsField; }
+        set { managerCommentsField = value; }
+    }
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 }

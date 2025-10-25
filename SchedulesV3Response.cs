@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class SchedulesV3Response
 {
-	private ScheduleV3[] schedulesField;
+    private ScheduleV3[] schedulesField;
 
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	public ScheduleV3[] schedules
-	{
-		get
-		{
-			return schedulesField;
-		}
-		set
-		{
-			schedulesField = value;
-		}
-	}
+    public ScheduleV3[] schedules
+    {
+        get { return schedulesField; }
+        set { schedulesField = value; }
+    }
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 }

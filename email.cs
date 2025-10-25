@@ -7,18 +7,12 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class email
 {
-	private string email1Field;
+    private string email1Field;
 
-	[SoapElement("email")]
-	public string email1
-	{
-		get
-		{
-			return email1Field;
-		}
-		set
-		{
-			email1Field = value;
-		}
-	}
+    [SoapElement("email")]
+    public string email1
+    {
+        get { return email1Field; }
+        set { email1Field = value; }
+    }
 }

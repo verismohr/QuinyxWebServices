@@ -7,32 +7,20 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class SalaryAdditionByDate
 {
-	private DateTime fromDateField;
+    private DateTime fromDateField;
 
-	private decimal salaryAdditionField;
+    private decimal salaryAdditionField;
 
-	[SoapElement(DataType = "date")]
-	public DateTime fromDate
-	{
-		get
-		{
-			return fromDateField;
-		}
-		set
-		{
-			fromDateField = value;
-		}
-	}
+    [SoapElement(DataType = "date")]
+    public DateTime fromDate
+    {
+        get { return fromDateField; }
+        set { fromDateField = value; }
+    }
 
-	public decimal salaryAddition
-	{
-		get
-		{
-			return salaryAdditionField;
-		}
-		set
-		{
-			salaryAdditionField = value;
-		}
-	}
+    public decimal salaryAddition
+    {
+        get { return salaryAdditionField; }
+        set { salaryAdditionField = value; }
+    }
 }

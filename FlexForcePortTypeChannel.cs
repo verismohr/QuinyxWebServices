@@ -4,6 +4,11 @@ using System.ServiceModel.Channels;
 
 namespace QuinyxWebServices;
 
-public interface FlexForcePortTypeChannel : FlexForcePortType, IClientChannel, IContextChannel, IChannel, ICommunicationObject, IExtensibleObject<IContextChannel>, IDisposable
-{
-}
+public interface FlexForcePortTypeChannel
+    : FlexForcePortType,
+        IClientChannel,
+        IContextChannel,
+        IChannel,
+        ICommunicationObject,
+        IExtensibleObject<IContextChannel>,
+        IDisposable { }

@@ -7,73 +7,43 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class ttFirstToExpireBalanceItem
 {
-	private string badgeNoField;
+    private string badgeNoField;
 
-	private int userIdField;
+    private int userIdField;
 
-	private int timeTrackerIdField;
+    private int timeTrackerIdField;
 
-	private int periodField;
+    private int periodField;
 
-	private string dateField;
+    private string dateField;
 
-	public string badgeNo
-	{
-		get
-		{
-			return badgeNoField;
-		}
-		set
-		{
-			badgeNoField = value;
-		}
-	}
+    public string badgeNo
+    {
+        get { return badgeNoField; }
+        set { badgeNoField = value; }
+    }
 
-	public int userId
-	{
-		get
-		{
-			return userIdField;
-		}
-		set
-		{
-			userIdField = value;
-		}
-	}
+    public int userId
+    {
+        get { return userIdField; }
+        set { userIdField = value; }
+    }
 
-	public int timeTrackerId
-	{
-		get
-		{
-			return timeTrackerIdField;
-		}
-		set
-		{
-			timeTrackerIdField = value;
-		}
-	}
+    public int timeTrackerId
+    {
+        get { return timeTrackerIdField; }
+        set { timeTrackerIdField = value; }
+    }
 
-	public int period
-	{
-		get
-		{
-			return periodField;
-		}
-		set
-		{
-			periodField = value;
-		}
-	}
+    public int period
+    {
+        get { return periodField; }
+        set { periodField = value; }
+    }
 
-	public string date
-	{
-		get
-		{
-			return dateField;
-		}
-		set
-		{
-			dateField = value;
-		}
-	}
+    public string date
+    {
+        get { return dateField; }
+        set { dateField = value; }
+    }
 }

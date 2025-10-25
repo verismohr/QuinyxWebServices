@@ -7,60 +7,36 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class unitInfo
 {
-	private string nameField;
+    private string nameField;
 
-	private string extApplicationIdField;
+    private string extApplicationIdField;
 
-	private int districtIdField;
+    private int districtIdField;
 
-	private bool districtIdFieldSpecified;
+    private bool districtIdFieldSpecified;
 
-	public string name
-	{
-		get
-		{
-			return nameField;
-		}
-		set
-		{
-			nameField = value;
-		}
-	}
+    public string name
+    {
+        get { return nameField; }
+        set { nameField = value; }
+    }
 
-	public string extApplicationId
-	{
-		get
-		{
-			return extApplicationIdField;
-		}
-		set
-		{
-			extApplicationIdField = value;
-		}
-	}
+    public string extApplicationId
+    {
+        get { return extApplicationIdField; }
+        set { extApplicationIdField = value; }
+    }
 
-	public int districtId
-	{
-		get
-		{
-			return districtIdField;
-		}
-		set
-		{
-			districtIdField = value;
-		}
-	}
+    public int districtId
+    {
+        get { return districtIdField; }
+        set { districtIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool districtIdSpecified
-	{
-		get
-		{
-			return districtIdFieldSpecified;
-		}
-		set
-		{
-			districtIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool districtIdSpecified
+    {
+        get { return districtIdFieldSpecified; }
+        set { districtIdFieldSpecified = value; }
+    }
 }

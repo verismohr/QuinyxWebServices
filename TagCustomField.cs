@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class TagCustomField
 {
-	private string labelField;
+    private string labelField;
 
-	private string valueField;
+    private string valueField;
 
-	public string label
-	{
-		get
-		{
-			return labelField;
-		}
-		set
-		{
-			labelField = value;
-		}
-	}
+    public string label
+    {
+        get { return labelField; }
+        set { labelField = value; }
+    }
 
-	public string value
-	{
-		get
-		{
-			return valueField;
-		}
-		set
-		{
-			valueField = value;
-		}
-	}
+    public string value
+    {
+        get { return valueField; }
+        set { valueField = value; }
+    }
 }

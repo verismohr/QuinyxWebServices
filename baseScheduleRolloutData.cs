@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class baseScheduleRolloutData
 {
-	private EmployeeRolloutHours[] employeesRolloutHoursField;
+    private EmployeeRolloutHours[] employeesRolloutHoursField;
 
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	public EmployeeRolloutHours[] employeesRolloutHours
-	{
-		get
-		{
-			return employeesRolloutHoursField;
-		}
-		set
-		{
-			employeesRolloutHoursField = value;
-		}
-	}
+    public EmployeeRolloutHours[] employeesRolloutHours
+    {
+        get { return employeesRolloutHoursField; }
+        set { employeesRolloutHoursField = value; }
+    }
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 }

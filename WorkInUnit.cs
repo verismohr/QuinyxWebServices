@@ -7,75 +7,45 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class WorkInUnit
 {
-	private int restIdField;
+    private int restIdField;
 
-	private bool restIdFieldSpecified;
+    private bool restIdFieldSpecified;
 
-	private string extUnitIdField;
+    private string extUnitIdField;
 
-	private bool rollOutShiftEnabledField;
+    private bool rollOutShiftEnabledField;
 
-	private bool rollOutShiftEnabledFieldSpecified;
+    private bool rollOutShiftEnabledFieldSpecified;
 
-	public int restId
-	{
-		get
-		{
-			return restIdField;
-		}
-		set
-		{
-			restIdField = value;
-		}
-	}
+    public int restId
+    {
+        get { return restIdField; }
+        set { restIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool restIdSpecified
-	{
-		get
-		{
-			return restIdFieldSpecified;
-		}
-		set
-		{
-			restIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool restIdSpecified
+    {
+        get { return restIdFieldSpecified; }
+        set { restIdFieldSpecified = value; }
+    }
 
-	public string extUnitId
-	{
-		get
-		{
-			return extUnitIdField;
-		}
-		set
-		{
-			extUnitIdField = value;
-		}
-	}
+    public string extUnitId
+    {
+        get { return extUnitIdField; }
+        set { extUnitIdField = value; }
+    }
 
-	public bool rollOutShiftEnabled
-	{
-		get
-		{
-			return rollOutShiftEnabledField;
-		}
-		set
-		{
-			rollOutShiftEnabledField = value;
-		}
-	}
+    public bool rollOutShiftEnabled
+    {
+        get { return rollOutShiftEnabledField; }
+        set { rollOutShiftEnabledField = value; }
+    }
 
-	[SoapIgnore]
-	public bool rollOutShiftEnabledSpecified
-	{
-		get
-		{
-			return rollOutShiftEnabledFieldSpecified;
-		}
-		set
-		{
-			rollOutShiftEnabledFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool rollOutShiftEnabledSpecified
+    {
+        get { return rollOutShiftEnabledFieldSpecified; }
+        set { rollOutShiftEnabledFieldSpecified = value; }
+    }
 }

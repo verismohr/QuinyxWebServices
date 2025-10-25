@@ -7,297 +7,171 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class standardBankHoliday
 {
-	private int idField;
+    private int idField;
 
-	private string redDateField;
+    private string redDateField;
 
-	private string descriptionField;
+    private string descriptionField;
 
-	private int oTypeField;
+    private int oTypeField;
 
-	private decimal reduxBefRedDayField;
+    private decimal reduxBefRedDayField;
 
-	private int reduxBefRedDayTypeField;
+    private int reduxBefRedDayTypeField;
 
-	private decimal reduxRedDayField;
+    private decimal reduxRedDayField;
 
-	private int reduxRedDayTypeField;
+    private int reduxRedDayTypeField;
 
-	private int countAsScheduledHoursField;
+    private int countAsScheduledHoursField;
 
-	private string countAsScheduledFromField;
+    private string countAsScheduledFromField;
 
-	private string countAsScheduledToField;
+    private string countAsScheduledToField;
 
-	private int canScheduleTwoYearsField;
+    private int canScheduleTwoYearsField;
 
-	private string[] noDatesField;
+    private string[] noDatesField;
 
-	private bankHolidaysSalaryTypeRule[] salaryTypeRulesField;
+    private bankHolidaysSalaryTypeRule[] salaryTypeRulesField;
 
-	private bankHolidayManualSalary[] manualSalariesField;
+    private bankHolidayManualSalary[] manualSalariesField;
 
-	private standardOvertime[] overtimesField;
+    private standardOvertime[] overtimesField;
 
-	private int validityField;
+    private int validityField;
 
-	private int createLeaveIfScheduledField;
+    private int createLeaveIfScheduledField;
 
-	private int createLeaveReasonIdField;
+    private int createLeaveReasonIdField;
 
-	private string onlyTheseUnitGroupsField;
+    private string onlyTheseUnitGroupsField;
 
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	public int id
-	{
-		get
-		{
-			return idField;
-		}
-		set
-		{
-			idField = value;
-		}
-	}
+    public int id
+    {
+        get { return idField; }
+        set { idField = value; }
+    }
 
-	public string redDate
-	{
-		get
-		{
-			return redDateField;
-		}
-		set
-		{
-			redDateField = value;
-		}
-	}
+    public string redDate
+    {
+        get { return redDateField; }
+        set { redDateField = value; }
+    }
 
-	public string description
-	{
-		get
-		{
-			return descriptionField;
-		}
-		set
-		{
-			descriptionField = value;
-		}
-	}
+    public string description
+    {
+        get { return descriptionField; }
+        set { descriptionField = value; }
+    }
 
-	public int oType
-	{
-		get
-		{
-			return oTypeField;
-		}
-		set
-		{
-			oTypeField = value;
-		}
-	}
+    public int oType
+    {
+        get { return oTypeField; }
+        set { oTypeField = value; }
+    }
 
-	public decimal reduxBefRedDay
-	{
-		get
-		{
-			return reduxBefRedDayField;
-		}
-		set
-		{
-			reduxBefRedDayField = value;
-		}
-	}
+    public decimal reduxBefRedDay
+    {
+        get { return reduxBefRedDayField; }
+        set { reduxBefRedDayField = value; }
+    }
 
-	public int reduxBefRedDayType
-	{
-		get
-		{
-			return reduxBefRedDayTypeField;
-		}
-		set
-		{
-			reduxBefRedDayTypeField = value;
-		}
-	}
+    public int reduxBefRedDayType
+    {
+        get { return reduxBefRedDayTypeField; }
+        set { reduxBefRedDayTypeField = value; }
+    }
 
-	public decimal reduxRedDay
-	{
-		get
-		{
-			return reduxRedDayField;
-		}
-		set
-		{
-			reduxRedDayField = value;
-		}
-	}
+    public decimal reduxRedDay
+    {
+        get { return reduxRedDayField; }
+        set { reduxRedDayField = value; }
+    }
 
-	public int reduxRedDayType
-	{
-		get
-		{
-			return reduxRedDayTypeField;
-		}
-		set
-		{
-			reduxRedDayTypeField = value;
-		}
-	}
+    public int reduxRedDayType
+    {
+        get { return reduxRedDayTypeField; }
+        set { reduxRedDayTypeField = value; }
+    }
 
-	public int countAsScheduledHours
-	{
-		get
-		{
-			return countAsScheduledHoursField;
-		}
-		set
-		{
-			countAsScheduledHoursField = value;
-		}
-	}
+    public int countAsScheduledHours
+    {
+        get { return countAsScheduledHoursField; }
+        set { countAsScheduledHoursField = value; }
+    }
 
-	public string countAsScheduledFrom
-	{
-		get
-		{
-			return countAsScheduledFromField;
-		}
-		set
-		{
-			countAsScheduledFromField = value;
-		}
-	}
+    public string countAsScheduledFrom
+    {
+        get { return countAsScheduledFromField; }
+        set { countAsScheduledFromField = value; }
+    }
 
-	public string countAsScheduledTo
-	{
-		get
-		{
-			return countAsScheduledToField;
-		}
-		set
-		{
-			countAsScheduledToField = value;
-		}
-	}
+    public string countAsScheduledTo
+    {
+        get { return countAsScheduledToField; }
+        set { countAsScheduledToField = value; }
+    }
 
-	public int canScheduleTwoYears
-	{
-		get
-		{
-			return canScheduleTwoYearsField;
-		}
-		set
-		{
-			canScheduleTwoYearsField = value;
-		}
-	}
+    public int canScheduleTwoYears
+    {
+        get { return canScheduleTwoYearsField; }
+        set { canScheduleTwoYearsField = value; }
+    }
 
-	public string[] noDates
-	{
-		get
-		{
-			return noDatesField;
-		}
-		set
-		{
-			noDatesField = value;
-		}
-	}
+    public string[] noDates
+    {
+        get { return noDatesField; }
+        set { noDatesField = value; }
+    }
 
-	public bankHolidaysSalaryTypeRule[] salaryTypeRules
-	{
-		get
-		{
-			return salaryTypeRulesField;
-		}
-		set
-		{
-			salaryTypeRulesField = value;
-		}
-	}
+    public bankHolidaysSalaryTypeRule[] salaryTypeRules
+    {
+        get { return salaryTypeRulesField; }
+        set { salaryTypeRulesField = value; }
+    }
 
-	public bankHolidayManualSalary[] manualSalaries
-	{
-		get
-		{
-			return manualSalariesField;
-		}
-		set
-		{
-			manualSalariesField = value;
-		}
-	}
+    public bankHolidayManualSalary[] manualSalaries
+    {
+        get { return manualSalariesField; }
+        set { manualSalariesField = value; }
+    }
 
-	public standardOvertime[] overtimes
-	{
-		get
-		{
-			return overtimesField;
-		}
-		set
-		{
-			overtimesField = value;
-		}
-	}
+    public standardOvertime[] overtimes
+    {
+        get { return overtimesField; }
+        set { overtimesField = value; }
+    }
 
-	public int validity
-	{
-		get
-		{
-			return validityField;
-		}
-		set
-		{
-			validityField = value;
-		}
-	}
+    public int validity
+    {
+        get { return validityField; }
+        set { validityField = value; }
+    }
 
-	public int createLeaveIfScheduled
-	{
-		get
-		{
-			return createLeaveIfScheduledField;
-		}
-		set
-		{
-			createLeaveIfScheduledField = value;
-		}
-	}
+    public int createLeaveIfScheduled
+    {
+        get { return createLeaveIfScheduledField; }
+        set { createLeaveIfScheduledField = value; }
+    }
 
-	public int createLeaveReasonId
-	{
-		get
-		{
-			return createLeaveReasonIdField;
-		}
-		set
-		{
-			createLeaveReasonIdField = value;
-		}
-	}
+    public int createLeaveReasonId
+    {
+        get { return createLeaveReasonIdField; }
+        set { createLeaveReasonIdField = value; }
+    }
 
-	public string onlyTheseUnitGroups
-	{
-		get
-		{
-			return onlyTheseUnitGroupsField;
-		}
-		set
-		{
-			onlyTheseUnitGroupsField = value;
-		}
-	}
+    public string onlyTheseUnitGroups
+    {
+        get { return onlyTheseUnitGroupsField; }
+        set { onlyTheseUnitGroupsField = value; }
+    }
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 }

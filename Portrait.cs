@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class Portrait
 {
-	private string portraitField;
+    private string portraitField;
 
-	private DateTime tsField;
+    private DateTime tsField;
 
-	public string portrait
-	{
-		get
-		{
-			return portraitField;
-		}
-		set
-		{
-			portraitField = value;
-		}
-	}
+    public string portrait
+    {
+        get { return portraitField; }
+        set { portraitField = value; }
+    }
 
-	public DateTime ts
-	{
-		get
-		{
-			return tsField;
-		}
-		set
-		{
-			tsField = value;
-		}
-	}
+    public DateTime ts
+    {
+        get { return tsField; }
+        set { tsField = value; }
+    }
 }

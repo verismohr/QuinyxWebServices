@@ -7,45 +7,27 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class Skill
 {
-	private int skillIdField;
+    private int skillIdField;
 
-	private string skillDescriptionField;
+    private string skillDescriptionField;
 
-	private DateTime tsField;
+    private DateTime tsField;
 
-	public int skillId
-	{
-		get
-		{
-			return skillIdField;
-		}
-		set
-		{
-			skillIdField = value;
-		}
-	}
+    public int skillId
+    {
+        get { return skillIdField; }
+        set { skillIdField = value; }
+    }
 
-	public string skillDescription
-	{
-		get
-		{
-			return skillDescriptionField;
-		}
-		set
-		{
-			skillDescriptionField = value;
-		}
-	}
+    public string skillDescription
+    {
+        get { return skillDescriptionField; }
+        set { skillDescriptionField = value; }
+    }
 
-	public DateTime ts
-	{
-		get
-		{
-			return tsField;
-		}
-		set
-		{
-			tsField = value;
-		}
-	}
+    public DateTime ts
+    {
+        get { return tsField; }
+        set { tsField = value; }
+    }
 }

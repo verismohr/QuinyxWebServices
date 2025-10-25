@@ -7,73 +7,43 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class Category
 {
-	private int idField;
+    private int idField;
 
-	private string categoryNameField;
+    private string categoryNameField;
 
-	private string extCodeField;
+    private string extCodeField;
 
-	private int roleField;
+    private int roleField;
 
-	private DateTime tsField;
+    private DateTime tsField;
 
-	public int id
-	{
-		get
-		{
-			return idField;
-		}
-		set
-		{
-			idField = value;
-		}
-	}
+    public int id
+    {
+        get { return idField; }
+        set { idField = value; }
+    }
 
-	public string categoryName
-	{
-		get
-		{
-			return categoryNameField;
-		}
-		set
-		{
-			categoryNameField = value;
-		}
-	}
+    public string categoryName
+    {
+        get { return categoryNameField; }
+        set { categoryNameField = value; }
+    }
 
-	public string extCode
-	{
-		get
-		{
-			return extCodeField;
-		}
-		set
-		{
-			extCodeField = value;
-		}
-	}
+    public string extCode
+    {
+        get { return extCodeField; }
+        set { extCodeField = value; }
+    }
 
-	public int role
-	{
-		get
-		{
-			return roleField;
-		}
-		set
-		{
-			roleField = value;
-		}
-	}
+    public int role
+    {
+        get { return roleField; }
+        set { roleField = value; }
+    }
 
-	public DateTime ts
-	{
-		get
-		{
-			return tsField;
-		}
-		set
-		{
-			tsField = value;
-		}
-	}
+    public DateTime ts
+    {
+        get { return tsField; }
+        set { tsField = value; }
+    }
 }

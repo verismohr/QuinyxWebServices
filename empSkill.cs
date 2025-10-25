@@ -7,89 +7,53 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class empSkill
 {
-	private string skillDescriptionField;
+    private string skillDescriptionField;
 
-	private string shiftTypeNameField;
+    private string shiftTypeNameField;
 
-	private int shiftTypeIdField;
+    private int shiftTypeIdField;
 
-	private int skillExpiresField;
+    private int skillExpiresField;
 
-	private DateTime skillExpiringDateField;
+    private DateTime skillExpiringDateField;
 
-	private bool skillExpiringDateFieldSpecified;
+    private bool skillExpiringDateFieldSpecified;
 
-	public string skillDescription
-	{
-		get
-		{
-			return skillDescriptionField;
-		}
-		set
-		{
-			skillDescriptionField = value;
-		}
-	}
+    public string skillDescription
+    {
+        get { return skillDescriptionField; }
+        set { skillDescriptionField = value; }
+    }
 
-	public string shiftTypeName
-	{
-		get
-		{
-			return shiftTypeNameField;
-		}
-		set
-		{
-			shiftTypeNameField = value;
-		}
-	}
+    public string shiftTypeName
+    {
+        get { return shiftTypeNameField; }
+        set { shiftTypeNameField = value; }
+    }
 
-	public int shiftTypeId
-	{
-		get
-		{
-			return shiftTypeIdField;
-		}
-		set
-		{
-			shiftTypeIdField = value;
-		}
-	}
+    public int shiftTypeId
+    {
+        get { return shiftTypeIdField; }
+        set { shiftTypeIdField = value; }
+    }
 
-	public int skillExpires
-	{
-		get
-		{
-			return skillExpiresField;
-		}
-		set
-		{
-			skillExpiresField = value;
-		}
-	}
+    public int skillExpires
+    {
+        get { return skillExpiresField; }
+        set { skillExpiresField = value; }
+    }
 
-	[SoapElement(DataType = "date")]
-	public DateTime skillExpiringDate
-	{
-		get
-		{
-			return skillExpiringDateField;
-		}
-		set
-		{
-			skillExpiringDateField = value;
-		}
-	}
+    [SoapElement(DataType = "date")]
+    public DateTime skillExpiringDate
+    {
+        get { return skillExpiringDateField; }
+        set { skillExpiringDateField = value; }
+    }
 
-	[SoapIgnore]
-	public bool skillExpiringDateSpecified
-	{
-		get
-		{
-			return skillExpiringDateFieldSpecified;
-		}
-		set
-		{
-			skillExpiringDateFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool skillExpiringDateSpecified
+    {
+        get { return skillExpiringDateFieldSpecified; }
+        set { skillExpiringDateFieldSpecified = value; }
+    }
 }

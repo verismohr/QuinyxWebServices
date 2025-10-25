@@ -7,17 +7,11 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class ErrorMessage
 {
-	private string messageField;
+    private string messageField;
 
-	public string message
-	{
-		get
-		{
-			return messageField;
-		}
-		set
-		{
-			messageField = value;
-		}
-	}
+    public string message
+    {
+        get { return messageField; }
+        set { messageField = value; }
+    }
 }

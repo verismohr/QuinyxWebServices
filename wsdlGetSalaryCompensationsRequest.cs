@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlGetSalaryCompensations", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlGetSalaryCompensations",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlGetSalaryCompensationsRequest
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public string apiKey;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public string apiKey;
 
-	public wsdlGetSalaryCompensationsRequest()
-	{
-	}
+    public wsdlGetSalaryCompensationsRequest() { }
 
-	public wsdlGetSalaryCompensationsRequest(string apiKey)
-	{
-		this.apiKey = apiKey;
-	}
+    public wsdlGetSalaryCompensationsRequest(string apiKey)
+    {
+        this.apiKey = apiKey;
+    }
 }

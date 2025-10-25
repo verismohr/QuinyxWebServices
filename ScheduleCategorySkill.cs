@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class ScheduleCategorySkill
 {
-	private string scatNameField;
+    private string scatNameField;
 
-	private string skillDescriptionField;
+    private string skillDescriptionField;
 
-	public string scatName
-	{
-		get
-		{
-			return scatNameField;
-		}
-		set
-		{
-			scatNameField = value;
-		}
-	}
+    public string scatName
+    {
+        get { return scatNameField; }
+        set { scatNameField = value; }
+    }
 
-	public string skillDescription
-	{
-		get
-		{
-			return skillDescriptionField;
-		}
-		set
-		{
-			skillDescriptionField = value;
-		}
-	}
+    public string skillDescription
+    {
+        get { return skillDescriptionField; }
+        set { skillDescriptionField = value; }
+    }
 }

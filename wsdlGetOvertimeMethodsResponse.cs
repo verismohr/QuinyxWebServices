@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlGetOvertimeMethodsResponse", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlGetOvertimeMethodsResponse",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlGetOvertimeMethodsResponse
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public OvertimeMethod[] @return;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public OvertimeMethod[] @return;
 
-	public wsdlGetOvertimeMethodsResponse()
-	{
-	}
+    public wsdlGetOvertimeMethodsResponse() { }
 
-	public wsdlGetOvertimeMethodsResponse(OvertimeMethod[] @return)
-	{
-		this.@return = @return;
-	}
+    public wsdlGetOvertimeMethodsResponse(OvertimeMethod[] @return)
+    {
+        this.@return = @return;
+    }
 }

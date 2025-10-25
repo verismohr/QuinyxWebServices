@@ -7,17 +7,11 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class EmployeeBadgeNo
 {
-	private string badgeNoField;
+    private string badgeNoField;
 
-	public string badgeNo
-	{
-		get
-		{
-			return badgeNoField;
-		}
-		set
-		{
-			badgeNoField = value;
-		}
-	}
+    public string badgeNo
+    {
+        get { return badgeNoField; }
+        set { badgeNoField = value; }
+    }
 }

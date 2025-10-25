@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlReverseTransactionsResponse", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlReverseTransactionsResponse",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlReverseTransactionsResponse
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public reverseInfo[] @return;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public reverseInfo[] @return;
 
-	public wsdlReverseTransactionsResponse()
-	{
-	}
+    public wsdlReverseTransactionsResponse() { }
 
-	public wsdlReverseTransactionsResponse(reverseInfo[] @return)
-	{
-		this.@return = @return;
-	}
+    public wsdlReverseTransactionsResponse(reverseInfo[] @return)
+    {
+        this.@return = @return;
+    }
 }

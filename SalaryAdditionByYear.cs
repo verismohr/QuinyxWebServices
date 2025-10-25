@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class SalaryAdditionByYear
 {
-	private decimal fromField;
+    private decimal fromField;
 
-	private decimal salaryAdditionField;
+    private decimal salaryAdditionField;
 
-	public decimal from
-	{
-		get
-		{
-			return fromField;
-		}
-		set
-		{
-			fromField = value;
-		}
-	}
+    public decimal from
+    {
+        get { return fromField; }
+        set { fromField = value; }
+    }
 
-	public decimal salaryAddition
-	{
-		get
-		{
-			return salaryAdditionField;
-		}
-		set
-		{
-			salaryAdditionField = value;
-		}
-	}
+    public decimal salaryAddition
+    {
+        get { return salaryAdditionField; }
+        set { salaryAdditionField = value; }
+    }
 }

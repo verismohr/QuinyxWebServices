@@ -7,247 +7,145 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class Section
 {
-	private int idField;
+    private int idField;
 
-	private bool idFieldSpecified;
+    private bool idFieldSpecified;
 
-	private string extSectionIdField;
+    private string extSectionIdField;
 
-	private string extGroupIdField;
+    private string extGroupIdField;
 
-	private int restIdField;
+    private int restIdField;
 
-	private bool restIdFieldSpecified;
+    private bool restIdFieldSpecified;
 
-	private string nameField;
+    private string nameField;
 
-	private int managerIdField;
+    private int managerIdField;
 
-	private bool managerIdFieldSpecified;
+    private bool managerIdFieldSpecified;
 
-	private int managerGroupIdField;
+    private int managerGroupIdField;
 
-	private bool managerGroupIdFieldSpecified;
+    private bool managerGroupIdFieldSpecified;
 
-	private int costCentreField;
+    private int costCentreField;
 
-	private bool costCentreFieldSpecified;
+    private bool costCentreFieldSpecified;
 
-	private string costCentreExtCodeField;
+    private string costCentreExtCodeField;
 
-	private DateTime tsField;
+    private DateTime tsField;
 
-	private bool tsFieldSpecified;
+    private bool tsFieldSpecified;
 
-	private string[] validationErrorsField;
+    private string[] validationErrorsField;
 
-	public int id
-	{
-		get
-		{
-			return idField;
-		}
-		set
-		{
-			idField = value;
-		}
-	}
+    public int id
+    {
+        get { return idField; }
+        set { idField = value; }
+    }
 
-	[SoapIgnore]
-	public bool idSpecified
-	{
-		get
-		{
-			return idFieldSpecified;
-		}
-		set
-		{
-			idFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool idSpecified
+    {
+        get { return idFieldSpecified; }
+        set { idFieldSpecified = value; }
+    }
 
-	public string extSectionId
-	{
-		get
-		{
-			return extSectionIdField;
-		}
-		set
-		{
-			extSectionIdField = value;
-		}
-	}
+    public string extSectionId
+    {
+        get { return extSectionIdField; }
+        set { extSectionIdField = value; }
+    }
 
-	public string extGroupId
-	{
-		get
-		{
-			return extGroupIdField;
-		}
-		set
-		{
-			extGroupIdField = value;
-		}
-	}
+    public string extGroupId
+    {
+        get { return extGroupIdField; }
+        set { extGroupIdField = value; }
+    }
 
-	public int restId
-	{
-		get
-		{
-			return restIdField;
-		}
-		set
-		{
-			restIdField = value;
-		}
-	}
+    public int restId
+    {
+        get { return restIdField; }
+        set { restIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool restIdSpecified
-	{
-		get
-		{
-			return restIdFieldSpecified;
-		}
-		set
-		{
-			restIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool restIdSpecified
+    {
+        get { return restIdFieldSpecified; }
+        set { restIdFieldSpecified = value; }
+    }
 
-	public string name
-	{
-		get
-		{
-			return nameField;
-		}
-		set
-		{
-			nameField = value;
-		}
-	}
+    public string name
+    {
+        get { return nameField; }
+        set { nameField = value; }
+    }
 
-	public int managerId
-	{
-		get
-		{
-			return managerIdField;
-		}
-		set
-		{
-			managerIdField = value;
-		}
-	}
+    public int managerId
+    {
+        get { return managerIdField; }
+        set { managerIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool managerIdSpecified
-	{
-		get
-		{
-			return managerIdFieldSpecified;
-		}
-		set
-		{
-			managerIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool managerIdSpecified
+    {
+        get { return managerIdFieldSpecified; }
+        set { managerIdFieldSpecified = value; }
+    }
 
-	public int managerGroupId
-	{
-		get
-		{
-			return managerGroupIdField;
-		}
-		set
-		{
-			managerGroupIdField = value;
-		}
-	}
+    public int managerGroupId
+    {
+        get { return managerGroupIdField; }
+        set { managerGroupIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool managerGroupIdSpecified
-	{
-		get
-		{
-			return managerGroupIdFieldSpecified;
-		}
-		set
-		{
-			managerGroupIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool managerGroupIdSpecified
+    {
+        get { return managerGroupIdFieldSpecified; }
+        set { managerGroupIdFieldSpecified = value; }
+    }
 
-	public int costCentre
-	{
-		get
-		{
-			return costCentreField;
-		}
-		set
-		{
-			costCentreField = value;
-		}
-	}
+    public int costCentre
+    {
+        get { return costCentreField; }
+        set { costCentreField = value; }
+    }
 
-	[SoapIgnore]
-	public bool costCentreSpecified
-	{
-		get
-		{
-			return costCentreFieldSpecified;
-		}
-		set
-		{
-			costCentreFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool costCentreSpecified
+    {
+        get { return costCentreFieldSpecified; }
+        set { costCentreFieldSpecified = value; }
+    }
 
-	public string costCentreExtCode
-	{
-		get
-		{
-			return costCentreExtCodeField;
-		}
-		set
-		{
-			costCentreExtCodeField = value;
-		}
-	}
+    public string costCentreExtCode
+    {
+        get { return costCentreExtCodeField; }
+        set { costCentreExtCodeField = value; }
+    }
 
-	public DateTime ts
-	{
-		get
-		{
-			return tsField;
-		}
-		set
-		{
-			tsField = value;
-		}
-	}
+    public DateTime ts
+    {
+        get { return tsField; }
+        set { tsField = value; }
+    }
 
-	[SoapIgnore]
-	public bool tsSpecified
-	{
-		get
-		{
-			return tsFieldSpecified;
-		}
-		set
-		{
-			tsFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool tsSpecified
+    {
+        get { return tsFieldSpecified; }
+        set { tsFieldSpecified = value; }
+    }
 
-	public string[] validationErrors
-	{
-		get
-		{
-			return validationErrorsField;
-		}
-		set
-		{
-			validationErrorsField = value;
-		}
-	}
+    public string[] validationErrors
+    {
+        get { return validationErrorsField; }
+        set { validationErrorsField = value; }
+    }
 }

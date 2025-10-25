@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlUpdateDistrictsResponse", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlUpdateDistrictsResponse",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlUpdateDistrictsResponse
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public UpdateDistrict[] @return;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public UpdateDistrict[] @return;
 
-	public wsdlUpdateDistrictsResponse()
-	{
-	}
+    public wsdlUpdateDistrictsResponse() { }
 
-	public wsdlUpdateDistrictsResponse(UpdateDistrict[] @return)
-	{
-		this.@return = @return;
-	}
+    public wsdlUpdateDistrictsResponse(UpdateDistrict[] @return)
+    {
+        this.@return = @return;
+    }
 }

@@ -7,75 +7,45 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class GetAgreementTemplatesSalaryTypesRequest
 {
-	private int templateIdField;
+    private int templateIdField;
 
-	private bool templateIdFieldSpecified;
+    private bool templateIdFieldSpecified;
 
-	private string externalTemplateIdField;
+    private string externalTemplateIdField;
 
-	private bool onlyActiveField;
+    private bool onlyActiveField;
 
-	private bool onlyActiveFieldSpecified;
+    private bool onlyActiveFieldSpecified;
 
-	public int templateId
-	{
-		get
-		{
-			return templateIdField;
-		}
-		set
-		{
-			templateIdField = value;
-		}
-	}
+    public int templateId
+    {
+        get { return templateIdField; }
+        set { templateIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool templateIdSpecified
-	{
-		get
-		{
-			return templateIdFieldSpecified;
-		}
-		set
-		{
-			templateIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool templateIdSpecified
+    {
+        get { return templateIdFieldSpecified; }
+        set { templateIdFieldSpecified = value; }
+    }
 
-	public string externalTemplateId
-	{
-		get
-		{
-			return externalTemplateIdField;
-		}
-		set
-		{
-			externalTemplateIdField = value;
-		}
-	}
+    public string externalTemplateId
+    {
+        get { return externalTemplateIdField; }
+        set { externalTemplateIdField = value; }
+    }
 
-	public bool onlyActive
-	{
-		get
-		{
-			return onlyActiveField;
-		}
-		set
-		{
-			onlyActiveField = value;
-		}
-	}
+    public bool onlyActive
+    {
+        get { return onlyActiveField; }
+        set { onlyActiveField = value; }
+    }
 
-	[SoapIgnore]
-	public bool onlyActiveSpecified
-	{
-		get
-		{
-			return onlyActiveFieldSpecified;
-		}
-		set
-		{
-			onlyActiveFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool onlyActiveSpecified
+    {
+        get { return onlyActiveFieldSpecified; }
+        set { onlyActiveFieldSpecified = value; }
+    }
 }

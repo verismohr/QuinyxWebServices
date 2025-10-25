@@ -7,74 +7,44 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class TemplateRedDay
 {
-	private int idField;
+    private int idField;
 
-	private int templateIdField;
+    private int templateIdField;
 
-	private DateTime redDateField;
+    private DateTime redDateField;
 
-	private string descriptionField;
+    private string descriptionField;
 
-	private DateTime tsField;
+    private DateTime tsField;
 
-	public int id
-	{
-		get
-		{
-			return idField;
-		}
-		set
-		{
-			idField = value;
-		}
-	}
+    public int id
+    {
+        get { return idField; }
+        set { idField = value; }
+    }
 
-	public int templateId
-	{
-		get
-		{
-			return templateIdField;
-		}
-		set
-		{
-			templateIdField = value;
-		}
-	}
+    public int templateId
+    {
+        get { return templateIdField; }
+        set { templateIdField = value; }
+    }
 
-	[SoapElement(DataType = "date")]
-	public DateTime redDate
-	{
-		get
-		{
-			return redDateField;
-		}
-		set
-		{
-			redDateField = value;
-		}
-	}
+    [SoapElement(DataType = "date")]
+    public DateTime redDate
+    {
+        get { return redDateField; }
+        set { redDateField = value; }
+    }
 
-	public string description
-	{
-		get
-		{
-			return descriptionField;
-		}
-		set
-		{
-			descriptionField = value;
-		}
-	}
+    public string description
+    {
+        get { return descriptionField; }
+        set { descriptionField = value; }
+    }
 
-	public DateTime ts
-	{
-		get
-		{
-			return tsField;
-		}
-		set
-		{
-			tsField = value;
-		}
-	}
+    public DateTime ts
+    {
+        get { return tsField; }
+        set { tsField = value; }
+    }
 }

@@ -7,160 +7,94 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class GetAgreementsV2
 {
-	private int agreementIdField;
+    private int agreementIdField;
 
-	private bool agreementIdFieldSpecified;
+    private bool agreementIdFieldSpecified;
 
-	private string extAgreementIdField;
+    private string extAgreementIdField;
 
-	private int sectionIdField;
+    private int sectionIdField;
 
-	private bool sectionIdFieldSpecified;
+    private bool sectionIdFieldSpecified;
 
-	private int employeeIdField;
+    private int employeeIdField;
 
-	private bool employeeIdFieldSpecified;
+    private bool employeeIdFieldSpecified;
 
-	private string badgeNoField;
+    private string badgeNoField;
 
-	private string fromDateField;
+    private string fromDateField;
 
-	private string toDateField;
+    private string toDateField;
 
-	private string modifiedAfterField;
+    private string modifiedAfterField;
 
-	public int agreementId
-	{
-		get
-		{
-			return agreementIdField;
-		}
-		set
-		{
-			agreementIdField = value;
-		}
-	}
+    public int agreementId
+    {
+        get { return agreementIdField; }
+        set { agreementIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool agreementIdSpecified
-	{
-		get
-		{
-			return agreementIdFieldSpecified;
-		}
-		set
-		{
-			agreementIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool agreementIdSpecified
+    {
+        get { return agreementIdFieldSpecified; }
+        set { agreementIdFieldSpecified = value; }
+    }
 
-	public string extAgreementId
-	{
-		get
-		{
-			return extAgreementIdField;
-		}
-		set
-		{
-			extAgreementIdField = value;
-		}
-	}
+    public string extAgreementId
+    {
+        get { return extAgreementIdField; }
+        set { extAgreementIdField = value; }
+    }
 
-	public int sectionId
-	{
-		get
-		{
-			return sectionIdField;
-		}
-		set
-		{
-			sectionIdField = value;
-		}
-	}
+    public int sectionId
+    {
+        get { return sectionIdField; }
+        set { sectionIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool sectionIdSpecified
-	{
-		get
-		{
-			return sectionIdFieldSpecified;
-		}
-		set
-		{
-			sectionIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool sectionIdSpecified
+    {
+        get { return sectionIdFieldSpecified; }
+        set { sectionIdFieldSpecified = value; }
+    }
 
-	public int employeeId
-	{
-		get
-		{
-			return employeeIdField;
-		}
-		set
-		{
-			employeeIdField = value;
-		}
-	}
+    public int employeeId
+    {
+        get { return employeeIdField; }
+        set { employeeIdField = value; }
+    }
 
-	[SoapIgnore]
-	public bool employeeIdSpecified
-	{
-		get
-		{
-			return employeeIdFieldSpecified;
-		}
-		set
-		{
-			employeeIdFieldSpecified = value;
-		}
-	}
+    [SoapIgnore]
+    public bool employeeIdSpecified
+    {
+        get { return employeeIdFieldSpecified; }
+        set { employeeIdFieldSpecified = value; }
+    }
 
-	public string badgeNo
-	{
-		get
-		{
-			return badgeNoField;
-		}
-		set
-		{
-			badgeNoField = value;
-		}
-	}
+    public string badgeNo
+    {
+        get { return badgeNoField; }
+        set { badgeNoField = value; }
+    }
 
-	public string fromDate
-	{
-		get
-		{
-			return fromDateField;
-		}
-		set
-		{
-			fromDateField = value;
-		}
-	}
+    public string fromDate
+    {
+        get { return fromDateField; }
+        set { fromDateField = value; }
+    }
 
-	public string toDate
-	{
-		get
-		{
-			return toDateField;
-		}
-		set
-		{
-			toDateField = value;
-		}
-	}
+    public string toDate
+    {
+        get { return toDateField; }
+        set { toDateField = value; }
+    }
 
-	public string modifiedAfter
-	{
-		get
-		{
-			return modifiedAfterField;
-		}
-		set
-		{
-			modifiedAfterField = value;
-		}
-	}
+    public string modifiedAfter
+    {
+        get { return modifiedAfterField; }
+        set { modifiedAfterField = value; }
+    }
 }

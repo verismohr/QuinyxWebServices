@@ -7,31 +7,19 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class Tag
 {
-	private string categoryExternalIdField;
+    private string categoryExternalIdField;
 
-	private string tagExternalIdField;
+    private string tagExternalIdField;
 
-	public string categoryExternalId
-	{
-		get
-		{
-			return categoryExternalIdField;
-		}
-		set
-		{
-			categoryExternalIdField = value;
-		}
-	}
+    public string categoryExternalId
+    {
+        get { return categoryExternalIdField; }
+        set { categoryExternalIdField = value; }
+    }
 
-	public string tagExternalId
-	{
-		get
-		{
-			return tagExternalIdField;
-		}
-		set
-		{
-			tagExternalIdField = value;
-		}
-	}
+    public string tagExternalId
+    {
+        get { return tagExternalIdField; }
+        set { tagExternalIdField = value; }
+    }
 }

@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlSendQmailResponse", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlSendQmailResponse",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlSendQmailResponse
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public Mail[] @return;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public Mail[] @return;
 
-	public wsdlSendQmailResponse()
-	{
-	}
+    public wsdlSendQmailResponse() { }
 
-	public wsdlSendQmailResponse(Mail[] @return)
-	{
-		this.@return = @return;
-	}
+    public wsdlSendQmailResponse(Mail[] @return)
+    {
+        this.@return = @return;
+    }
 }

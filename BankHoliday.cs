@@ -7,32 +7,20 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class BankHoliday
 {
-	private DateTime dateField;
+    private DateTime dateField;
 
-	private string descriptionField;
+    private string descriptionField;
 
-	[SoapElement(DataType = "date")]
-	public DateTime date
-	{
-		get
-		{
-			return dateField;
-		}
-		set
-		{
-			dateField = value;
-		}
-	}
+    [SoapElement(DataType = "date")]
+    public DateTime date
+    {
+        get { return dateField; }
+        set { dateField = value; }
+    }
 
-	public string description
-	{
-		get
-		{
-			return descriptionField;
-		}
-		set
-		{
-			descriptionField = value;
-		}
-	}
+    public string description
+    {
+        get { return descriptionField; }
+        set { descriptionField = value; }
+    }
 }

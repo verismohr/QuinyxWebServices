@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlGetSchedulesResponse", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlGetSchedulesResponse",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlGetSchedulesResponse
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public Schedule[] @return;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public Schedule[] @return;
 
-	public wsdlGetSchedulesResponse()
-	{
-	}
+    public wsdlGetSchedulesResponse() { }
 
-	public wsdlGetSchedulesResponse(Schedule[] @return)
-	{
-		this.@return = @return;
-	}
+    public wsdlGetSchedulesResponse(Schedule[] @return)
+    {
+        this.@return = @return;
+    }
 }

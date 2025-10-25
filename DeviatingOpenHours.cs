@@ -7,45 +7,27 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class DeviatingOpenHours
 {
-	private string timeStartField;
+    private string timeStartField;
 
-	private string timeEndField;
+    private string timeEndField;
 
-	private string dateField;
+    private string dateField;
 
-	public string timeStart
-	{
-		get
-		{
-			return timeStartField;
-		}
-		set
-		{
-			timeStartField = value;
-		}
-	}
+    public string timeStart
+    {
+        get { return timeStartField; }
+        set { timeStartField = value; }
+    }
 
-	public string timeEnd
-	{
-		get
-		{
-			return timeEndField;
-		}
-		set
-		{
-			timeEndField = value;
-		}
-	}
+    public string timeEnd
+    {
+        get { return timeEndField; }
+        set { timeEndField = value; }
+    }
 
-	public string date
-	{
-		get
-		{
-			return dateField;
-		}
-		set
-		{
-			dateField = value;
-		}
-	}
+    public string date
+    {
+        get { return dateField; }
+        set { dateField = value; }
+    }
 }

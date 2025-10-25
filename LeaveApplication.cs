@@ -7,302 +7,176 @@ namespace QuinyxWebServices;
 [SoapType(Namespace = "https://api.quinyx.com/soap/FlexForce")]
 public class LeaveApplication
 {
-	private int idField;
+    private int idField;
 
-	private string headerField;
+    private string headerField;
 
-	private string bodytextField;
+    private string bodytextField;
 
-	private DateTime senddateField;
+    private DateTime senddateField;
 
-	private int fromPersIdField;
+    private int fromPersIdField;
 
-	private string fromBadgeNoField;
+    private string fromBadgeNoField;
 
-	private int? toPersIdField;
+    private int? toPersIdField;
 
-	private int moderatedField;
+    private int moderatedField;
 
-	private int beenViewedField;
+    private int beenViewedField;
 
-	private string leaveReasonField;
+    private string leaveReasonField;
 
-	private DateTime fromDateField;
+    private DateTime fromDateField;
 
-	private DateTime fromTimeField;
+    private DateTime fromTimeField;
 
-	private DateTime toDateField;
+    private DateTime toDateField;
 
-	private DateTime toTimeField;
+    private DateTime toTimeField;
 
-	private int restIdField;
+    private int restIdField;
 
-	private string extCodeField;
+    private string extCodeField;
 
-	private decimal estHoursField;
+    private decimal estHoursField;
 
-	private decimal estSalaryField;
+    private decimal estSalaryField;
 
-	private decimal sickLevelField;
+    private decimal sickLevelField;
 
-	private int isPreliminaryField;
+    private int isPreliminaryField;
 
-	private DateTime tsField;
+    private DateTime tsField;
 
-	public int id
-	{
-		get
-		{
-			return idField;
-		}
-		set
-		{
-			idField = value;
-		}
-	}
+    public int id
+    {
+        get { return idField; }
+        set { idField = value; }
+    }
 
-	public string header
-	{
-		get
-		{
-			return headerField;
-		}
-		set
-		{
-			headerField = value;
-		}
-	}
+    public string header
+    {
+        get { return headerField; }
+        set { headerField = value; }
+    }
 
-	public string bodytext
-	{
-		get
-		{
-			return bodytextField;
-		}
-		set
-		{
-			bodytextField = value;
-		}
-	}
+    public string bodytext
+    {
+        get { return bodytextField; }
+        set { bodytextField = value; }
+    }
 
-	public DateTime senddate
-	{
-		get
-		{
-			return senddateField;
-		}
-		set
-		{
-			senddateField = value;
-		}
-	}
+    public DateTime senddate
+    {
+        get { return senddateField; }
+        set { senddateField = value; }
+    }
 
-	public int fromPersId
-	{
-		get
-		{
-			return fromPersIdField;
-		}
-		set
-		{
-			fromPersIdField = value;
-		}
-	}
+    public int fromPersId
+    {
+        get { return fromPersIdField; }
+        set { fromPersIdField = value; }
+    }
 
-	public string fromBadgeNo
-	{
-		get
-		{
-			return fromBadgeNoField;
-		}
-		set
-		{
-			fromBadgeNoField = value;
-		}
-	}
+    public string fromBadgeNo
+    {
+        get { return fromBadgeNoField; }
+        set { fromBadgeNoField = value; }
+    }
 
-	[SoapElement(IsNullable = true)]
-	public int? toPersId
-	{
-		get
-		{
-			return toPersIdField;
-		}
-		set
-		{
-			toPersIdField = value;
-		}
-	}
+    [SoapElement(IsNullable = true)]
+    public int? toPersId
+    {
+        get { return toPersIdField; }
+        set { toPersIdField = value; }
+    }
 
-	public int moderated
-	{
-		get
-		{
-			return moderatedField;
-		}
-		set
-		{
-			moderatedField = value;
-		}
-	}
+    public int moderated
+    {
+        get { return moderatedField; }
+        set { moderatedField = value; }
+    }
 
-	public int beenViewed
-	{
-		get
-		{
-			return beenViewedField;
-		}
-		set
-		{
-			beenViewedField = value;
-		}
-	}
+    public int beenViewed
+    {
+        get { return beenViewedField; }
+        set { beenViewedField = value; }
+    }
 
-	public string leaveReason
-	{
-		get
-		{
-			return leaveReasonField;
-		}
-		set
-		{
-			leaveReasonField = value;
-		}
-	}
+    public string leaveReason
+    {
+        get { return leaveReasonField; }
+        set { leaveReasonField = value; }
+    }
 
-	[SoapElement(DataType = "date")]
-	public DateTime fromDate
-	{
-		get
-		{
-			return fromDateField;
-		}
-		set
-		{
-			fromDateField = value;
-		}
-	}
+    [SoapElement(DataType = "date")]
+    public DateTime fromDate
+    {
+        get { return fromDateField; }
+        set { fromDateField = value; }
+    }
 
-	[SoapElement(DataType = "time")]
-	public DateTime fromTime
-	{
-		get
-		{
-			return fromTimeField;
-		}
-		set
-		{
-			fromTimeField = value;
-		}
-	}
+    [SoapElement(DataType = "time")]
+    public DateTime fromTime
+    {
+        get { return fromTimeField; }
+        set { fromTimeField = value; }
+    }
 
-	[SoapElement(DataType = "date")]
-	public DateTime toDate
-	{
-		get
-		{
-			return toDateField;
-		}
-		set
-		{
-			toDateField = value;
-		}
-	}
+    [SoapElement(DataType = "date")]
+    public DateTime toDate
+    {
+        get { return toDateField; }
+        set { toDateField = value; }
+    }
 
-	[SoapElement(DataType = "time")]
-	public DateTime toTime
-	{
-		get
-		{
-			return toTimeField;
-		}
-		set
-		{
-			toTimeField = value;
-		}
-	}
+    [SoapElement(DataType = "time")]
+    public DateTime toTime
+    {
+        get { return toTimeField; }
+        set { toTimeField = value; }
+    }
 
-	public int restId
-	{
-		get
-		{
-			return restIdField;
-		}
-		set
-		{
-			restIdField = value;
-		}
-	}
+    public int restId
+    {
+        get { return restIdField; }
+        set { restIdField = value; }
+    }
 
-	public string extCode
-	{
-		get
-		{
-			return extCodeField;
-		}
-		set
-		{
-			extCodeField = value;
-		}
-	}
+    public string extCode
+    {
+        get { return extCodeField; }
+        set { extCodeField = value; }
+    }
 
-	public decimal estHours
-	{
-		get
-		{
-			return estHoursField;
-		}
-		set
-		{
-			estHoursField = value;
-		}
-	}
+    public decimal estHours
+    {
+        get { return estHoursField; }
+        set { estHoursField = value; }
+    }
 
-	public decimal estSalary
-	{
-		get
-		{
-			return estSalaryField;
-		}
-		set
-		{
-			estSalaryField = value;
-		}
-	}
+    public decimal estSalary
+    {
+        get { return estSalaryField; }
+        set { estSalaryField = value; }
+    }
 
-	public decimal sickLevel
-	{
-		get
-		{
-			return sickLevelField;
-		}
-		set
-		{
-			sickLevelField = value;
-		}
-	}
+    public decimal sickLevel
+    {
+        get { return sickLevelField; }
+        set { sickLevelField = value; }
+    }
 
-	public int isPreliminary
-	{
-		get
-		{
-			return isPreliminaryField;
-		}
-		set
-		{
-			isPreliminaryField = value;
-		}
-	}
+    public int isPreliminary
+    {
+        get { return isPreliminaryField; }
+        set { isPreliminaryField = value; }
+    }
 
-	public DateTime ts
-	{
-		get
-		{
-			return tsField;
-		}
-		set
-		{
-			tsField = value;
-		}
-	}
+    public DateTime ts
+    {
+        get { return tsField; }
+        set { tsField = value; }
+    }
 }

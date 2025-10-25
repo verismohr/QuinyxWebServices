@@ -2,18 +2,20 @@ using System.ServiceModel;
 
 namespace QuinyxWebServices;
 
-[MessageContract(WrapperName = "wsdlGetLeaveApplicationsResponse", WrapperNamespace = "uri:FlexForce", IsWrapped = true)]
+[MessageContract(
+    WrapperName = "wsdlGetLeaveApplicationsResponse",
+    WrapperNamespace = "uri:FlexForce",
+    IsWrapped = true
+)]
 public class wsdlGetLeaveApplicationsResponse
 {
-		[MessageBodyMember(Namespace = "", Order = 0)]
-		public LeaveApplication[] @return;
+    [MessageBodyMember(Namespace = "", Order = 0)]
+    public LeaveApplication[] @return;
 
-	public wsdlGetLeaveApplicationsResponse()
-	{
-	}
+    public wsdlGetLeaveApplicationsResponse() { }
 
-	public wsdlGetLeaveApplicationsResponse(LeaveApplication[] @return)
-	{
-		this.@return = @return;
-	}
+    public wsdlGetLeaveApplicationsResponse(LeaveApplication[] @return)
+    {
+        this.@return = @return;
+    }
 }
